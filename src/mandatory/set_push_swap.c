@@ -1,46 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_utils.c                                       :+:      :+:    :+:   */
+/*   set_push_swap.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/19 15:30:00 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/21 10:52:12 by hahchtar         ###   ########.fr       */
+/*   Created: 2025/12/25 18:48:56 by hahchtar          #+#    #+#             */
+/*   Updated: 2025/12/25 18:48:57 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "../../includes/push_swap.h"
 
-#include "push_swap.h"
-
-void	set_indexs(t_stack *a)
+void	set_push_swap(t_stack **a, t_stack **b)
 {
-	int		i;
-	t_stack	*ptr;
-	t_stack	*tmp;
+	int	size;
 
-	tmp = a;
-	while (a)
-	{
-		i = 0;
-		ptr = tmp;
-		while (ptr)
-		{
-			if (ptr->value < a->value)
-				i++;
-			ptr = ptr->next;
-		}
-		a->index = i;
-		a = a->next;
-	}
-}
-
-int	is_sorted(t_stack *head)
-{
-	while (head->next)
-	{
-		if (head->value > head->next->value)
-			return (0);
-		head = head->next;
-	}
-	return (1);
+	size = lstsize(a);
+	if (size == 2)
+		sort_2(a);
+	else if (size == 3)
+		sort_3(a);
+	else if (size <= 5)
+		sort_5(a, b, size);
+	else
+		push_swap(a, b, size);
 }
