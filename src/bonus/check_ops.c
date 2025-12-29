@@ -6,7 +6,7 @@
 /*   By: hassan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 01:23:40 by hassan            #+#    #+#             */
-/*   Updated: 2025/12/29 01:32:22 by hassan           ###   ########.fr       */
+/*   Updated: 2025/12/29 13:49:54 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ int	check_swap(char *str, t_stack **a, t_stack **b)
 		return (0);
 	return (1);
 }
+
 int	check_push(char *str, t_stack **a, t_stack **b)
 {
 	if (ft_strcmp(str, "pa\n"))

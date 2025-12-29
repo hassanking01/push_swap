@@ -1,6 +1,6 @@
 CC = cc
 NAME = push_swap
-CFLAGS = -g #-Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 m_fils = ft_printf/ft_printf.c \
 		ft_printf/ft_pustr.c   \

@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 16:12:47 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/25 17:23:29 by hahchtar         ###   ########.fr       */
+/*   Updated: 2025/12/29 13:47:30 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	check_error(char **av)
 	{
 		if (ft_atoi(av[i]) > 2147483647 || check_duplicate(av, i))
 		{
-			ft_printf("av[i] = %d | %s\n", ft_atoi(av[i]) ,ft_atoi(av[i]) > 2147483647 ? "ture" : "false");
 			write(2, "Error\n", 6);
 			free_re(av);
 			return (0);

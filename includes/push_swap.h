@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 15:29:31 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/25 17:21:49 by hahchtar         ###   ########.fr       */
+/*   Updated: 2025/12/29 13:49:32 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -25,13 +25,13 @@ typedef struct s_stack
 
 void				sa(t_stack **a, int flag);
 void				sb(t_stack **b, int flag);
-void				ss(t_stack **a, t_stack **b , int flag);
+void				ss(t_stack **a, t_stack **b, int flag);
 void				pa(t_stack **a, t_stack **b, int flag);
 void				pb(t_stack **a, t_stack **b, int flag);
 void				lstaddack(t_stack **head, t_stack *new_node);
 void				ra(t_stack **a, int flag);
 void				rb(t_stack **b, int falg);
-void				rr(t_stack **a, t_stack **b , int flag);
+void				rr(t_stack **a, t_stack **b, int flag);
 void				rra(t_stack **a, int flag);
 void				rrb(t_stack **b, int flag);
 void				rrr(t_stack **a, t_stack **b, int flag);
@@ -57,11 +57,8 @@ void				sort_5(t_stack **a, t_stack **b, int size);
 void				push_swap(t_stack **a, t_stack **b, int chunk_size);
 char				*ft_strndup(char *str, int size);
 
-
-
-
-int check_rotate(char *str , t_stack  ** a , t_stack ** b);
-int check_rev_rotate(char *str , t_stack  ** a , t_stack ** b);
-int check_push(char * str , t_stack ** a, t_stack ** b);
-int check_swap(char * str , t_stack ** a, t_stack ** b);
+int					check_rotate(char *str, t_stack **a, t_stack **b);
+int					check_rev_rotate(char *str, t_stack **a, t_stack **b);
+int					check_push(char *str, t_stack **a, t_stack **b);
+int					check_swap(char *str, t_stack **a, t_stack **b);
 #endif

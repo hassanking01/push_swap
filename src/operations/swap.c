@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 15:35:04 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/24 15:35:09 by hahchtar         ###   ########.fr       */
+/*   Updated: 2025/12/29 13:48:18 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ void	sb(t_stack **b, int flag)
 	if (flag)
 		ft_printf("sb\n");
 }
-void ss(t_stack ** a, t_stack ** b, int flag)
+
+void	ss(t_stack **a, t_stack **b, int flag)
 {
 	sa(a, 0);
 	sb(b, 0);
