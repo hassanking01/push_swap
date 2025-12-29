@@ -76,7 +76,7 @@ void	finish_push_swap(t_stack **a, t_stack **b)
 		i = big_po(*b);
 		ptr = find(*b, i);
 		pos(b, i, ptr);
-		pa(a, b);
+		pa(a, b, 1);
 	}
 }
 
@@ -93,13 +93,13 @@ void	push_swap(t_stack **a, t_stack **b, int chunk_size)
 	{
 		if ((*a)->index <= i)
 		{
-			pb(a, b);
+			pb(a, b, 1);
 			rb(b, 1);
 			i++;
 		}
 		else if ((*a)->index < i + chunk_size)
 		{
-			pb(a, b);
+			pb(a, b, 1);
 			i++;
 		}
 		else

@@ -26,8 +26,8 @@ typedef struct s_stack
 void				sa(t_stack **a, int flag);
 void				sb(t_stack **b, int flag);
 void				ss(t_stack **a, t_stack **b , int flag);
-void				pa(t_stack **a, t_stack **b);
-void				pb(t_stack **a, t_stack **b);
+void				pa(t_stack **a, t_stack **b, int flag);
+void				pb(t_stack **a, t_stack **b, int flag);
 void				lstaddack(t_stack **head, t_stack *new_node);
 void				ra(t_stack **a, int flag);
 void				rb(t_stack **b, int falg);

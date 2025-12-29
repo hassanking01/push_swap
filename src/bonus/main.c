@@ -36,7 +36,7 @@ int	check_oppirations(char *op, t_stack **a, t_stack **b)
 void	free_everything(char **av, t_stack **a, t_stack **b)
 {
 	while ((*b))
-		pb(a, b);
+		pb(a, b ,0);
 	ft_clean(av, a);
 }
 int	run_ops(char **av, t_stack **a, t_stack **b)
@@ -51,7 +51,7 @@ int	run_ops(char **av, t_stack **a, t_stack **b)
 			free_everything(av, a, b);
 			free(line);
 			write(2, "Error\n", 6);
-			return (0);
+			exit(1);
 		}
 		free(line);
 		line = get_next_line(0);
@@ -74,9 +74,7 @@ int	main(int ac, char **argv)
 	av = ft_split(av);
 	i = 0;
 	if (!check_error(av))
-	{
 		return (0);
-	}
 	set_stack_a(&a, av);
 	if (run_ops(av, &a, &b))
 		if (is_sorted(a))

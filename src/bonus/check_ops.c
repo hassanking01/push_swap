@@ -39,9 +39,9 @@ int	check_swap(char *str, t_stack **a, t_stack **b)
 int	check_push(char *str, t_stack **a, t_stack **b)
 {
 	if (ft_strcmp(str, "pa\n"))
-		pa(a, b);
-	else if (ft_strcmp(str, "pa\n"))
-		pb(a, b);
+		pa(a, b, 0);
+	else if (ft_strcmp(str, "pb\n"))
+		pb(a, b, 0);
 	else
 		return (0);
 	return (1);
