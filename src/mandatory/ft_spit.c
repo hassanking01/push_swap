@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 15:35:29 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/25 17:23:09 by hahchtar         ###   ########.fr       */
+/*   Updated: 2025/12/29 01:18:07 by hassan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ int	word_count(char **strs)
 	int		i;
 	int		count;
 	char	*str;
+	int		j;
 
 	count = 0;
 	while (*strs)
 	{
 		i = 0;
 		str = *strs;
-		if (!str[0])
-			return (-1);
+		j = count;
 		while (str[i])
 		{
 			while (str[i] == ' ' && str[i])
@@ -34,6 +34,8 @@ int	word_count(char **strs)
 			while (str[i] != ' ' && str[i])
 				i++;
 		}
+		if (j == count)
+			return (-1);
 		strs++;
 	}
 	return (count);
