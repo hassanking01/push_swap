@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 15:29:31 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/29 13:49:32 by hahchtar         ###   ########.fr       */
+/*   Updated: 2025/12/30 17:33:48 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef PUSH_SWAP_H
@@ -15,6 +15,7 @@
 # include "../get_next_line/get_next_line.h"
 # include <stdlib.h>
 # define INT_MIN -2147483648
+
 typedef struct s_stack
 {
 	int				index;
