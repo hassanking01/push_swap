@@ -83,7 +83,6 @@ void	sort_5(t_stack **a, t_stack **b, int size)
 {
 	int	min;
 
-	min = INT_MIN;
 	while (size > 3)
 	{
 		min = get_min(*a);
