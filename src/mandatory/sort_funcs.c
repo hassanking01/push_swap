@@ -71,9 +71,9 @@ void	min_in_head(t_stack **a, int min, int size)
 		i++;
 		ptr = ptr->next;
 	}
-	if (i < size / 2)
+	if (i <= size / 2)
 		while ((*a)->value != min)
-			sa(a, 1);
+			ra(a, 1);
 	else
 		while ((*a)->value != min)
 			rra(a, 1);

@@ -76,6 +76,8 @@ int	main(int ac, char **argv)
 	if (ac == 1)
 		return (0);
 	av = ft_split(av);
+	if (!av)
+		return (0);
 	if (!check_error(av))
 		return (0);
 	set_stack_a(&a, av);
