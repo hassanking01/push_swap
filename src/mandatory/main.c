@@ -22,9 +22,11 @@ int	main(int ac, char *agv[])
 	a = NULL;
 	b = NULL;
 	if (ac < 2)
-		return (1);
+		return (0);
 	av++;
 	av = ft_split(av);
+	if (!av)
+		return (0);
 	if (!check_error(av))
 		return (0);
 	set_stack_a(&a, av);

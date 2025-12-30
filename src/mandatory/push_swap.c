@@ -42,7 +42,7 @@ void	pos(t_stack **b, int i, t_stack *ptr)
 	int	size;
 
 	size = lstsize(b);
-	if (i >= size / 2)
+	if (i > size / 2)
 	{
 		while ((*b)->value != ptr->value)
 		{
@@ -97,7 +97,7 @@ void	push_swap(t_stack **a, t_stack **b, int chunk_size)
 			rb(b, 1);
 			i++;
 		}
-		else if ((*a)->index < i + chunk_size)
+		else if ((*a)->index <= i + chunk_size)
 		{
 			pb(a, b, 1);
 			i++;

@@ -13,9 +13,8 @@
 # define PUSH_SWAP_H
 # include "../ft_printf/ft_printf.h"
 # include "../get_next_line/get_next_line.h"
-# include <limits.h>
 # include <stdlib.h>
-
+# define INT_MIN -2147483648
 typedef struct s_stack
 {
 	int				index;

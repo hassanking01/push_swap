@@ -86,14 +86,9 @@ void	sort_5(t_stack **a, t_stack **b, int size)
 	min = INT_MIN;
 	while (size > 3)
 	{
-		if ((*a)->index == 1 || (*a)->index == 0)
-			pb(a, b, 1);
-		else
-		{
-			min = get_min(*a);
-			min_in_head(a, min, size);
-			pb(a, b, 1);
-		}
+		min = get_min(*a);
+		min_in_head(a, min, size);
+		pb(a, b, 1);
 		size--;
 	}
 	if (lstsize(b) > 1 && is_sorted(*b))
