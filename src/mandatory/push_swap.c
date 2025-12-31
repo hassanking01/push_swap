@@ -12,7 +12,7 @@
 
 #include "../../includes/push_swap.h"
 
-int	big_po(t_stack *ptr)
+int	get_big_pos(t_stack *ptr)
 {
 	int		i;
 	t_stack	*tmp;
@@ -37,27 +37,6 @@ int	big_po(t_stack *ptr)
 	return (i);
 }
 
-void	pos(t_stack **b, int i, t_stack *ptr)
-{
-	int	size;
-
-	size = lstsize(b);
-	if (i > size / 2)
-	{
-		while ((*b)->value != ptr->value)
-		{
-			rrb(b, 1);
-		}
-	}
-	else
-	{
-		while ((*b)->value != ptr->value)
-		{
-			rb(b, 1);
-		}
-	}
-}
-
 t_stack	*find(t_stack *b, int index)
 {
 	while (index--)
@@ -65,17 +44,34 @@ t_stack	*find(t_stack *b, int index)
 	return (b);
 }
 
+void	big_to_head(t_stack **b, int i)
+{
+	int	size;
+	t_stack * targit;
+
+	targit = find(*b , i);
+	size = lstsize(b);
+	if (i > size / 2)
+	{
+		while ((*b) != targit)
+			rrb(b, 1);
+	}
+	else
+	{
+		while ((*b) != targit)
+			rb(b, 1);
+	}
+}
+
 void	finish_push_swap(t_stack **a, t_stack **b)
 {
 	int		i;
-	t_stack	*ptr;
 
 	i = 0;
 	while (*b)
 	{
-		i = big_po(*b);
-		ptr = find(*b, i);
-		pos(b, i, ptr);
+		i = get_big_pos(*b);
+		big_to_head(b, i);
 		pa(a, b, 1);
 	}
 }
