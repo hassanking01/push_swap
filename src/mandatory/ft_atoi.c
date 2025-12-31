@@ -45,6 +45,8 @@ long	ft_atoi(char *str)
 		if (!is_digit(str[i]))
 			return (41474836488);
 		re = (re * 10) + (str[i] - '0');
+		if (re > 2147483648)
+			return (41474836488);
 		i++;
 	}
 	re = re * sign;
