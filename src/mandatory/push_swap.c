@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 15:25:03 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/24 15:25:17 by hahchtar         ###   ########.fr       */
+/*   Updated: 2026/01/01 09:45:39 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ t_stack	*find(t_stack *b, int index)
 
 void	big_to_head(t_stack **b, int i)
 {
-	int	size;
-	t_stack * targit;
+	int		size;
+	t_stack	*targit;
 
-	targit = find(*b , i);
+	targit = find(*b, i);
 	size = lstsize(b);
 	if (i > size / 2)
 	{
@@ -65,7 +65,7 @@ void	big_to_head(t_stack **b, int i)
 
 void	finish_push_swap(t_stack **a, t_stack **b)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (*b)

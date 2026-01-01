@@ -6,7 +6,7 @@
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/25 17:20:30 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/12/29 13:45:40 by hahchtar         ###   ########.fr       */
+/*   Updated: 2026/01/01 09:45:39 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,9 +84,9 @@ int	main(int ac, char **argv)
 	if (run_ops(av, &a, &b))
 	{
 		if (is_sorted(a))
-			write(1, "ok\n", 3);
+			write(1, "OK\n", 3);
 		else
-			write(1, "ko\n", 3);
+			write(1, "KO\n", 3);
 	}
 	free_everything(av, &a, &b);
 	return (0);
