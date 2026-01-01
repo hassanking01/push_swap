@@ -23,7 +23,7 @@ void	pa(t_stack **a, t_stack **b, int flag)
 	ptr->next = (*a);
 	(*a) = ptr;
 	if (flag)
-		ft_printf("pa\n");
+		write(1, "pa\n", 3);
 }
 
 void	pb(t_stack **a, t_stack **b, int flag)
@@ -37,5 +37,5 @@ void	pb(t_stack **a, t_stack **b, int flag)
 	ptr->next = (*b);
 	(*b) = ptr;
 	if (flag)
-		ft_printf("pb\n");
+		write(1, "pb\n", 3);
 }

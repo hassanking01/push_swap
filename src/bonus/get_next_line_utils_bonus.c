@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/09 12:28:14 by hahchtar          #+#    #+#             */
-/*   Updated: 2025/11/14 18:33:46 by hahchtar         ###   ########.fr       */
+/*   Updated: 2026/01/01 14:42:16 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../../includes/push_swap_bonus.h"
 
 int	read_from_fd(int fd, char **remainder)
 {

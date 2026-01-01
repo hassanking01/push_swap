@@ -2,13 +2,7 @@ CC = cc
 NAME = push_swap
 CFLAGS = -Wall -Wextra -Werror
 
-m_fils = ft_printf/ft_printf.c \
-		ft_printf/ft_pustr.c   \
-		ft_printf/ft_putchar.c  \
-		ft_printf/ft_putnbr.c    \
-		ft_printf/ft_putptr.c     \
-		ft_printf/ft_putunsigned_hex.c \
-		src/mandatory/sort_utils.c                \
+m_fils = src/mandatory/sort_utils.c                \
 		src/operations/push.c 			\
 		src/operations/reverce_rotate.c \
 		src/operations/rotate.c 		\
@@ -27,28 +21,21 @@ m_fils = ft_printf/ft_printf.c \
 b_fils = 
 obj_files =$(m_fils:.c=.o)
 
-b_fils = ft_printf/ft_printf.c \
-		ft_printf/ft_pustr.c   \
-		ft_printf/ft_putchar.c  \
-		ft_printf/ft_putnbr.c    \
-		ft_printf/ft_putptr.c     \
-		ft_printf/ft_putunsigned_hex.c \
-		src/mandatory/sort_utils.c                \
-		src/mandatory/ft_atoi.c 					\
-		src/mandatory/ft_spit.c 					\
-		src/mandatory/ft_strndup.c       \
-		src/operations/push.c 			\
-		src/operations/reverce_rotate.c \
-		src/operations/rotate.c 		\
-		src/operations/swap.c 			\
-		src/mandatory/stack_utils.c 		\
-		src/mandatory/sort_funcs.c 				\
-		src/mandatory/lst_utils.c 				\
-		src/bonus/check_ops.c						\
-		get_next_line/get_next_line_utils.c         \
-		get_next_line/get_next_line.c               \
-		src/mandatory/handel_error.c 				\
-		src/bonus/main.c
+b_fils = src/mandatory/sort_utils.c                \
+		src/bonus/ft_atoi_bonus.c 					\
+		src/bonus/ft_spit_bonus.c 					\
+		src/bonus/ft_strndup_bonus.c       \
+		src/bonus/push_bonus.c 			\
+		src/bonus/reverce_rotate_bonus.c \
+		src/bonus/rotate_bonus.c 		\
+		src/bonus/swap_bonus.c 			\
+		src/bonus/stack_utils_bonus.c 		\
+		src/bonus/lst_utils_bonus.c 				\
+		src/bonus/check_ops_bonus.c				\
+		src/bonus/get_next_line_utils_bonus.c         \
+		src/bonus/get_next_line_bonus.c               \
+		src/bonus/handel_error_bonus.c 				\
+		src/bonus/main_bonus.c
 
 bonus_obj_files =$(b_fils:.c=.o)
 

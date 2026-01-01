@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handel_error.c                                     :+:      :+:    :+:   */
+/*   handel_error_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hahchtar <hahchtar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/24 16:12:47 by hahchtar          #+#    #+#             */
-/*   Updated: 2026/01/01 14:44:08 by hahchtar         ###   ########.fr       */
+/*   Updated: 2026/01/01 14:42:22 by hahchtar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../includes/push_swap.h"
+#include "../../includes/push_swap_bonus.h"
 
 int	check_duplicate(char **av, int i)
 {
